@@ -17,8 +17,7 @@ app.use(cors());
 mongoose.connect(process.env.MONGO)
   .then(() => {
   })
-  .catch((err) => {
-    console.log(err);
+  .catch(() => {
   });
 mongoose.Promise = global.Promise;
 
