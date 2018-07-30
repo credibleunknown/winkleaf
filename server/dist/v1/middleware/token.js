@@ -1,0 +1,25 @@
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _jsonwebtoken = require('jsonwebtoken');
+
+var _jsonwebtoken2 = _interopRequireDefault(_jsonwebtoken);
+
+var _dotenv = require('dotenv');
+
+var _dotenv2 = _interopRequireDefault(_dotenv);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+_dotenv2.default.config();
+var secret = process.env.SECRET;
+
+var createToken = function createToken(_ref) {
+  var id = _ref.id;
+  return _jsonwebtoken2.default.sign({ id: id }, secret, { expiresIn: '1h' });
+};
+
+exports.default = createToken;

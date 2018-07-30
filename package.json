@@ -10,7 +10,7 @@
   },
   "scripts": {
     "dev": "nodemon server/app.js --exec babel-node",
-    "build": "react-scripts build",
+    "build": "babel server -d server/dist",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "client": "react-scripts start",

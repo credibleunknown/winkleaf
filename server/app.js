@@ -21,7 +21,7 @@ mongoose.connect(process.env.MONGO)
   });
 mongoose.Promise = global.Promise;
 
-const port = process.env.PORT || 9999;
+const port = process.env.PORT || 9900;
 
 app.use(routes);
 app.use(express.static(path.join(__dirname, '../client/build/')));
