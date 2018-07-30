@@ -10,7 +10,8 @@
   },
   "scripts": {
     "dev": "nodemon server/app.js --exec babel-node",
-    "start": "babel-node server/app.js"
+    "start": "babel-node server/app.js",
+    "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "repository": {
     "type": "git",
