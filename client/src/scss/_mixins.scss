@@ -1,0 +1,49 @@
+@import '_px-to-rem';
+
+@mixin main-gradient {
+  background: $primary-color;
+  background: -webkit-linear-gradient(to right, $primary-color, #d3a812);
+  background: linear-gradient(to right, $primary-color, #d3a812); 
+}
+
+@mixin appearance-none {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+@mixin form-text {
+  box-sizing: border-box;
+  min-height: rem(39);
+  width: 100%;
+  padding: rem(10);
+  margin-bottom: rem(10);
+  font-family: inherit;
+  font-size: rem(14);
+  vertical-align: middle;
+  border: rem(1) solid lighten($primary-color, 40%);
+  border-radius: rem(3);
+  outline: none;
+  background-color: $white;
+  box-shadow: none!important;
+
+  &:focus {
+    border-color: $primary-color;
+  }
+
+  &:disabled {
+    background-color: $secondary-color;
+    cursor: not-allowed;
+  }
+}
+
+@mixin form-search {
+  @include form-text;
+  @include appearance-none;
+  padding: 0 rem(4);
+}
+
+@mixin form-textarea {
+  @include form-text;
+  display: block;
+  overflow: auto;
+}

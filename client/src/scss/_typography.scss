@@ -1,0 +1,28 @@
+@import 'variables';
+
+
+a{
+	color: #444;
+	text-decoration: none !important;
+	&:hover{
+		color: $primary-color;
+	}
+	&:active,&:focus{
+		outline: none;
+		color: $primary-color;
+	}
+}
+
+.timeline{
+	a{
+		color: $primary-color;
+		text-decoration: none !important;
+		&:hover{
+			color: $secondary-color;
+		}
+		&:active,&:focus{
+			outline: none;
+			color: $primary-color;
+		}
+	}
+}

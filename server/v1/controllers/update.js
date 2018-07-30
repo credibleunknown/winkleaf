@@ -15,7 +15,7 @@ cloudinary.config({
 export function createUpdate(req, res) {
   cloudinary.uploader.upload(req.files.coverImage.path, (coverImageResult) => {
     const coverImage = coverImageResult.url;
-  cloudinary.uploader.upload(req.files.photos.path, (photosResult) => {
+  cloudinary.uploader.upload(req.files.photo.path, (photosResult) => {
     const photo = photosResult.url;
     const update = new Update({
       _id: new mongoose.Types.ObjectId(),
@@ -52,12 +52,12 @@ export function getSingleUpdate(req, res) {
     .then(singleUpdate =>
       res.status(200).json({
         success: true,
-        message: `This is the available information for ${newUpdate.name}`,
+        message: `This is the available information for ${singleUpdate.name}`,
         singleUpdate,
       }))
     .catch(() => res.status(500).json({
       success: false,
-      message: 'Server error, please try again. Thanks',
+      message: 'This update does not exist',
     }));
 }
 

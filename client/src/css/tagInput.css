@@ -1,0 +1,21 @@
+.labelinput, .labelinput:focus { 
+	border: none; 
+	outline: none; 
+}
+
+.tagLabel { 
+	margin: 0 4px 4px 0; 
+	font-size: 100%;
+	background-color: #444;
+	color: #fff;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.tags{
+	padding-top: 15px;
+}
+
+.closelabel { 
+	color: #fff; 
+}

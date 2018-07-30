@@ -1,0 +1,167 @@
+@import 'variables';
+@import '_px-to-rem';
+
+// Banner
+@media (max-width: 817px) {
+	.banner-content{
+		width: 90% !important;
+		h3{
+			font-size: rem(20) !important;
+		}
+		
+	}
+}
+
+@media (max-width: 346px){
+	.event-meta{
+		font-size: rem(10)!important;
+	}
+}
+
+// Countdown TImer
+
+@media (max-width: 395px){
+	.timer{
+		font-size: rem(15) !important;
+	}
+}
+
+@media (min-width:396px) and (max-width: 767px){
+	.timer{
+		font-size: rem(20) !important;
+	}
+}
+
+@media (max-width: 395px){
+	.meta-section{
+		div{
+			span{
+				a{
+					font-size: rem(12);
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 768px){
+	.event-pool-title{
+		.title{
+			text-align: left;
+		}
+		.username{
+			text-align: right;
+		}
+	}
+}
+
+@media (max-width: 354px){
+	.event-menu{
+		nav{
+			a{
+				font-size: rem(10);
+			}
+		}
+	}
+}
+
+@media (max-width: 385px){
+	.pre-event{
+		.card{
+			height: 150px !important;
+			border-radius: 5px !important;
+		}
+	}
+}
+
+@media (max-width: 385px){
+	.pre-event{
+		.card{
+			height: 100px !important;
+			border-radius: 5px !important;
+		}
+	}
+}
+
+.main-search{
+	@media (max-width: 991px){
+		.keyword, .location, .category, .name, .btn-search, .search-by{
+			display: none;
+		}
+	}
+}
+
+@media (min-width: 991px){
+	.search-toggler{
+		display: none;
+	}
+	.mobile-main-menu{
+		display: none;
+	}
+}
+
+@media (max-width: 500px){
+	.meta-section{
+		h6{
+			font-size: rem(12);
+		}
+	}
+}
+
+// Blog
+@media (max-width: 991px){
+	.blog-img, .blog-title{
+		height: 130px !important;
+	}
+
+	.feature-title{
+		h5{
+			font-size: rem(15);
+			padding-left: rem(10) !important;
+			padding-right: rem(10) !important;
+		}
+	}
+}
+
+@media (max-width: 450px){
+	.feature-img{
+		height: 200px !important;
+	}
+	.feature-title{
+		height: 150px !important;
+		position: absolute !important;
+		top: 50px !important;
+	}
+}
+
+@media (min-height: 992px){
+	.blog-title-sm{
+		display: none !important;
+	}
+}
+
+// Wink Form
+@media (min-height: 768px){
+	.split{
+		brder-right: solid 1px;
+	}
+}
+
+@media (max-height: 767px){
+	.split{
+		border-right: none;
+	}
+	.wink-form{
+		margin-bottom: 40px;
+		label, .invite-heading{
+			text-align: center;
+		}
+	}
+}
+
+// Buy ticket menu
+@media (max-width: 768px){
+	.buy-ticket{
+		background-color: rgba($primary-color, 0.7) !important;
+	}
+}
